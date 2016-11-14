@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <RetailExpress_Stickymenu>
+      <version>0.1.0</version>
+    </RetailExpress_Stickymenu>
+  </modules>
+  <global>
+    <helpers>
+      <stickymenu>
+        <class>RetailExpress_Stickymenu_Helper</class>
+      </stickymenu>
+    </helpers>
+  </global>
+</config> 

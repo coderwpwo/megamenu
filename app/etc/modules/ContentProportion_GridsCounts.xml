@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <ContentProportion_GridsCounts>
+      <active>true</active>
+      <codePool>community</codePool>
+      <version>0.1.0</version>
+    </ContentProportion_GridsCounts>
+  </modules>
+</config>
