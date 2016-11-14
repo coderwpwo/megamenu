@@ -5,6 +5,15 @@
       <version>0.1.1</version>
     </CategoryAttrcustom_CustomCatAttr>
   </modules>
+	<frontend>
+	 <layout>
+		 <updates>
+			 <customcatattr>
+				 <file>customcatattr.xml</file>
+			 </customcatattr>
+		 </updates>
+	 </layout>
+	</frontend>  
   <global>
     <helpers>
       <customcatattr>
@@ -18,7 +27,7 @@
 	  </customcatattr>
 	</models>
 	<resources>
-	  <categoryattribute1476356764_setup>
+	  <categoryattribute_setup>
 		<setup>
 		  <module>CategoryAttrcustom_CustomCatAttr</module>
 		  <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
@@ -26,17 +35,17 @@
 		<connection>
 		  <use>core_setup</use>
 		</connection>
-	  </categoryattribute1476356764_setup>
-	  <categoryattribute1476356764_write>
+	  </categoryattribute_setup>
+	  <categoryattribute_write>
 		<connection>
 		  <use>core_write</use>
 		</connection>
-	  </categoryattribute1476356764_write>
-	  <categoryattribute1476356764_read>
+	  </categoryattribute_write>
+	  <categoryattribute_read>
 		<connection>
 		  <use>core_read</use>
 		</connection>
-	  </categoryattribute1476356764_read>
+	  </categoryattribute_read>
 	</resources>
   </global>
 </config> 

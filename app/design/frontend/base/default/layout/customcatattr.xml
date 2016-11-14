@@ -1,8 +1,12 @@
 <?xml version="1.0"?>
 <layout>
     <default translate="label" module="page">
+		<reference name="before_body_end">
+			<block type="page/html_head" name="scripts_in_footer">		
+				<action method="addItem"><type>skin_js</type><name>mega_menu/js/script.js</name></action>
+			</block>
+		</reference>
         <reference name="head">
-			<action method="addItem"><type>skin_js</type><name>mega_menu/js/script.js</name></action>
             <action method="addItem"><type>skin_css</type><name>mega_menu/css/megamenu.css</name></action>
         </reference>
     </default>

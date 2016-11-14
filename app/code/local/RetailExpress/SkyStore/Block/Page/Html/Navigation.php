@@ -61,7 +61,7 @@ class RetailExpress_SkyStore_Block_Page_Html_Navigation extends Mage_Page_Block_
 				 $catLevels = $category->getLevels();
 				 if($category->getDropDownWidth()!=''){
 					 
-					 $tabwidth = $category->getDropDownWidth();
+					 $tabwidth = "style='width:".$category->getDropDownWidth().";margin:0 auto;'";
 					 
 				 } else {
 				 
@@ -78,7 +78,7 @@ class RetailExpress_SkyStore_Block_Page_Html_Navigation extends Mage_Page_Block_
 					$bgtabcolor = "#000";
 				 }
 				 
-				 $html .= '<li ' . $this->_getRenderedMenuItemAttributes($child) . ' style="background-color:'.$bgtabcolor.';width:'.$tabwidth.'">';
+				 $html .= '<li ' . $this->_getRenderedMenuItemAttributes($child) . ' style="background-color:'.$bgtabcolor.'">';
 			 
 			 } else {
 				 
@@ -106,12 +106,12 @@ class RetailExpress_SkyStore_Block_Page_Html_Navigation extends Mage_Page_Block_
 					}
 					if($cur == 0)
 					{
-						$html .= '<ul class="row' . $rowNum . '" style="float:left;width:50%;">';
+						$html .= '<ul class="row' . $rowNum . '" style="float:left;">';
 					}
 					if($cur == $breakpoint)
 					{
 						$html .= '</ul>';
-						$html .= '<ul class="row' . $rowNum . '" style="float:left;width:50%;">';
+						$html .= '<ul class="row' . $rowNum . '" style="float:left;">';
 						$cur = 0;
 						
 					}
@@ -247,7 +247,7 @@ class RetailExpress_SkyStore_Block_Page_Html_Navigation extends Mage_Page_Block_
 	
 					// Start modifications
 					} elseif ($childLevel === 0) {
-						$html .= "<div style=\"width:100%;\" class=\"navigation-dropdown navigation-dropdown-{$category->getNavigationDropdownType()}\">";
+						$html .= "<div {$tabwidth} class=\"navigation-dropdown navigation-dropdown-{$category->getNavigationDropdownType()}\">";
 					}
 					// End modifications
 	

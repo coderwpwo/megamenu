@@ -25,12 +25,8 @@
 	padding:0px 15px;	
 }
 
-.top-content-cat, .bottom-content-cat{
-		padding:15px;	 
-}
-
-.left-content-cat img,.right-content-cat img,.top-content-cat img,.bottom-content-cat img {
-    width: 47%;
+.top-content-cat, .bottom-content-cat {
+    padding: 30px 15px 0px 15px;
 }
 
 .left-content-cat, .right-content-cat{
@@ -91,9 +87,15 @@ table {
 .separator {
     border-top: 1px solid #dad7d7;
 }
-.right-off-canvas-menu .level1 a{
-    z-index: 99999999999999;
+
+.right-off-canvas-menu li a {
+    z-index: 99999999999;
 }
+
+.block-content li a{
+	z-index: 99999999999999;
+}
+
 .nav-container {
     max-width: 100%;
     margin-bottom: 1.42857rem;
